@@ -11,6 +11,9 @@
 		8F60BDC4246E88CB00E13004 /* client_udp.c in Sources */ = {isa = PBXBuildFile; fileRef = 8F60BDC3246E88CB00E13004 /* client_udp.c */; };
 		8F60BDC7246E93B700E13004 /* server_tcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 8F60BDC6246E93B700E13004 /* server_tcp.c */; };
 		8F60BDCA246E93D800E13004 /* client_tcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 8F60BDC9246E93D800E13004 /* client_tcp.c */; };
+		8FBBD4BA24739ECD000E2104 /* server_chat.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FBBD4B924739ECD000E2104 /* server_chat.c */; };
+		8FBBD4BD24739EF1000E2104 /* client_chat.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FBBD4BC24739EF1000E2104 /* client_chat.c */; };
+		8FBBD4C02473B5CC000E2104 /* web_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FBBD4BF2473B5CC000E2104 /* web_client.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,11 +29,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8F60BDB7246E753A00E13004 /* socket_progragmming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = socket_progragmming; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F60BDB7246E753A00E13004 /* socket_programming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = socket_programming; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F60BDBA246E753A00E13004 /* server_udp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = server_udp.c; sourceTree = "<group>"; };
 		8F60BDC3246E88CB00E13004 /* client_udp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = client_udp.c; sourceTree = "<group>"; };
 		8F60BDC6246E93B700E13004 /* server_tcp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = server_tcp.c; sourceTree = "<group>"; };
 		8F60BDC9246E93D800E13004 /* client_tcp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = client_tcp.c; sourceTree = "<group>"; };
+		8FBBD4B924739ECD000E2104 /* server_chat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = server_chat.c; sourceTree = "<group>"; };
+		8FBBD4BC24739EF1000E2104 /* client_chat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = client_chat.c; sourceTree = "<group>"; };
+		8FBBD4BF2473B5CC000E2104 /* web_client.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = web_client.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				8F60BDC1246E889900E13004 /* socket_programming_client */,
-				8F60BDB9246E753A00E13004 /* socket_progragmming_server */,
+				8F60BDB9246E753A00E13004 /* socket_programming_server */,
 				8F60BDB8246E753A00E13004 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,18 +62,19 @@
 		8F60BDB8246E753A00E13004 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8F60BDB7246E753A00E13004 /* socket_progragmming */,
+				8F60BDB7246E753A00E13004 /* socket_programming */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8F60BDB9246E753A00E13004 /* socket_progragmming_server */ = {
+		8F60BDB9246E753A00E13004 /* socket_programming_server */ = {
 			isa = PBXGroup;
 			children = (
 				8F60BDBA246E753A00E13004 /* server_udp.c */,
 				8F60BDC6246E93B700E13004 /* server_tcp.c */,
+				8FBBD4B924739ECD000E2104 /* server_chat.c */,
 			);
-			path = socket_progragmming_server;
+			path = socket_programming_server;
 			sourceTree = "<group>";
 		};
 		8F60BDC1246E889900E13004 /* socket_programming_client */ = {
@@ -75,6 +82,8 @@
 			children = (
 				8F60BDC3246E88CB00E13004 /* client_udp.c */,
 				8F60BDC9246E93D800E13004 /* client_tcp.c */,
+				8FBBD4BC24739EF1000E2104 /* client_chat.c */,
+				8FBBD4BF2473B5CC000E2104 /* web_client.c */,
 			);
 			path = socket_programming_client;
 			sourceTree = "<group>";
@@ -82,9 +91,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8F60BDB6246E753A00E13004 /* socket_progragmming */ = {
+		8F60BDB6246E753A00E13004 /* socket_programming */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F60BDBE246E753A00E13004 /* Build configuration list for PBXNativeTarget "socket_progragmming" */;
+			buildConfigurationList = 8F60BDBE246E753A00E13004 /* Build configuration list for PBXNativeTarget "socket_programming" */;
 			buildPhases = (
 				8F60BDB3246E753A00E13004 /* Sources */,
 				8F60BDB4246E753A00E13004 /* Frameworks */,
@@ -94,9 +103,9 @@
 			);
 			dependencies = (
 			);
-			name = socket_progragmming;
+			name = socket_programming;
 			productName = socket_progragmming;
-			productReference = 8F60BDB7246E753A00E13004 /* socket_progragmming */;
+			productReference = 8F60BDB7246E753A00E13004 /* socket_programming */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +122,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8F60BDB2246E753A00E13004 /* Build configuration list for PBXProject "socket_progragmming" */;
+			buildConfigurationList = 8F60BDB2246E753A00E13004 /* Build configuration list for PBXProject "socket_programming" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -126,7 +135,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8F60BDB6246E753A00E13004 /* socket_progragmming */,
+				8F60BDB6246E753A00E13004 /* socket_programming */,
 			);
 		};
 /* End PBXProject section */
@@ -136,9 +145,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FBBD4BD24739EF1000E2104 /* client_chat.c in Sources */,
 				8F60BDBB246E753A00E13004 /* server_udp.c in Sources */,
 				8F60BDC4246E88CB00E13004 /* client_udp.c in Sources */,
 				8F60BDC7246E93B700E13004 /* server_tcp.c in Sources */,
+				8FBBD4BA24739ECD000E2104 /* server_chat.c in Sources */,
+				8FBBD4C02473B5CC000E2104 /* web_client.c in Sources */,
 				8F60BDCA246E93D800E13004 /* client_tcp.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,7 +286,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8F60BDB2246E753A00E13004 /* Build configuration list for PBXProject "socket_progragmming" */ = {
+		8F60BDB2246E753A00E13004 /* Build configuration list for PBXProject "socket_programming" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F60BDBC246E753A00E13004 /* Debug */,
@@ -283,7 +295,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F60BDBE246E753A00E13004 /* Build configuration list for PBXNativeTarget "socket_progragmming" */ = {
+		8F60BDBE246E753A00E13004 /* Build configuration list for PBXNativeTarget "socket_programming" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F60BDBF246E753A00E13004 /* Debug */,

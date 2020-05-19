@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:socket_progragmming.xcodeproj">
+      location = "self:/Users/haero_kim/Desktop/H43RO/socket_progragmming/socket_programming.xcodeproj">
    </FileRef>
 </Workspace>
